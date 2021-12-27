@@ -10,7 +10,8 @@ public class HelloController implements Controller {
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) {
         ModelAndView mv = new ModelAndView();
-        mv.addObject("msg","第一条消息");
+        String result = "Hello World";
+        mv.addObject("msg",result);
         mv.setViewName("hello");
         return mv;
     }
